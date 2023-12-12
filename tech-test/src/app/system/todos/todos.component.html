@@ -1,0 +1,12 @@
+@if (isTodosLoading) {
+  <div>Loading...</div>
+}
+@else {
+  <div class="todos-wrapper">
+    @for (todo of todos; track todo.id) {
+      <todo-item [todo]="todo"></todo-item>
+    }
+  </div>
+
+}
+

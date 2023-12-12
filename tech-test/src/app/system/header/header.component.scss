@@ -1,0 +1,19 @@
+@import "variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $main;
+  padding: $spacing * 2 $spacing * 4;
+  color: $white;
+
+  & h1 {
+    font-size: $font-xxl;
+  }
+}
+
+.header-icon-wrapper {
+  width: $spacing * 5;
+  height: $spacing * 5;
+}

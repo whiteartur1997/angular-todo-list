@@ -1,0 +1,40 @@
+@import "variables";
+
+.todo-item-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  border-radius: $spacing * 2.5;
+  box-shadow: 0 $spacing * 0.5 $spacing rgba(0, 0, 0, 0.1);
+}
+
+.todo-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: $spacing;
+}
+
+.todo-title {
+  color: $main;
+  font-size: $font-l;
+}
+
+.todo-actions {
+  display: flex;
+  column-gap: $spacing;
+}
+
+.isDoneButton {
+  fill: $white;
+  stroke: $main;
+}
+
+.isDone {
+  fill: $main;
+  stroke: $white;
+}

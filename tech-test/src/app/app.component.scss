@@ -1,7 +1,6 @@
-.title-text{
-  font-size: 20px;
-  line-height: 1.5;
-  color: #20364b;
-  font-weight: 600;
-  font-family: 'ProximaNova', sans-serif;
+@import "variables";
+
+.container {
+  margin: $spacing * 3 auto;
+  max-width: 80%;
 }
