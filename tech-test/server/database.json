@@ -3,16 +3,37 @@
     {
       "id": 1,
       "label": "Kitchen Cleanup",
-      "description":  "Clean my dirty kitchen",
+      "description": "Clean my dirty kitchen",
       "category": "house",
       "done": false
     },
     {
       "id": 2,
       "label": "Taxes",
-      "description":  "Start doing my taxes and contact my accountant jhon for advice",
+      "description": "Start doing my taxes and contact my accountant jhon for advice",
       "category": "bureaucracy",
       "done": "22-10-2019"
+    },
+    {
+      "id": 1702548435597,
+      "label": "Yolo",
+      "description": "Man",
+      "category": null,
+      "done": false
+    },
+    {
+      "id": 1702549994236,
+      "label": "frrf",
+      "description": "fwrfw",
+      "category": "work",
+      "done": false
+    },
+    {
+      "id": 1702550385708,
+      "label": "5th todo",
+      "description": "Do smth",
+      "category": "pleasure",
+      "done": false
     }
   ]
 }

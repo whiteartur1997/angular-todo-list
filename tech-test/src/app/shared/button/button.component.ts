@@ -5,7 +5,7 @@ import {NgClass} from "@angular/common";
   selector: "todo-button",
   standalone: true,
   template: `
-      <button class="base" [ngClass]="isRegular ? 'regular' : 'icon'" (click)="onButtonClick($event)">
+      <button [disabled]="disabled" class="base" [ngClass]="isRegular ? 'regular' : 'icon'" (click)="onButtonClick($event)">
           <ng-content></ng-content>
       </button>
   `,
@@ -16,6 +16,7 @@ import {NgClass} from "@angular/common";
 })
 export class ButtonComponent {
   @Input() isRegular = true;
+  @Input() disabled = false;
   @Output() buttonClicked = new EventEmitter();
 
   onButtonClick(event: any) {

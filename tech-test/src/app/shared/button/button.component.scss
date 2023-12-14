@@ -2,6 +2,11 @@
 
 .base {
   cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background: $grey;
+  }
 }
 
 .regular {
@@ -11,6 +16,11 @@
   font-weight: $font-bold;
   border-radius: $spacing * 2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: $spacing $spacing * 1.5;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 }
 
 .icon {
