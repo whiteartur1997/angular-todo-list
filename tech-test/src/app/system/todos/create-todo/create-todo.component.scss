@@ -1,0 +1,18 @@
+@import "variables";
+
+.create-todo-form {
+  width: 320px;
+  max-width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: $spacing * 2;
+  background-color: $white;
+  border-radius: $spacing * 2.5;
+  box-shadow: 0 $spacing * 0.5 $spacing rgba(0, 0, 0, 0.1);
+}
+
+.controls-wrapper {
+  display: flex;
+  column-gap: $spacing;
+}

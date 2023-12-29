@@ -1,0 +1,20 @@
+@import "variables";
+
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: $spacing;
+}
+
+.label {
+  color: $grey;
+  font-size: $font-m;
+}
+
+.select {
+  color: $main;
+  border: 2px solid $main;
+  border-radius: $spacing;
+  padding: $spacing;
+  appearance: auto;
+}

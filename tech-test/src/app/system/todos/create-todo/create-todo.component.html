@@ -1,0 +1,31 @@
+<form class="create-todo-form" #todoForm="ngForm" (ngSubmit)="onSubmit(todoForm)">
+  <todo-input
+    id="name"
+    label="Title"
+    name="name"
+    inputId="createTodoTitle"
+    [(ngModel)]="todo.label"
+    required />
+  <todo-input
+    label="Description"
+    type="textarea"
+    id="description"
+    name="description"
+    inputId="createTodoDescription"
+    [(ngModel)]="todo.description"></todo-input>
+  <app-todo-select
+    id="category"
+    label="Category"
+    selectId="createTodoCategory"
+    name="category"
+    [options]="todoCategories"
+    [(ngModel)]="todo.category"></app-todo-select>
+  <div class="controls-wrapper">
+    <app-todo-button type="submit" [disabled]="!todoForm.valid">{{ isEditMode ? "Edit" : "Create" }}</app-todo-button>
+    @if (isEditMode) {
+      <app-todo-button type="button" [isWarning]="true" (click)="onClearEditMode()">Cancel</app-todo-button>
+    }
+  </div>
+
+
+</form>

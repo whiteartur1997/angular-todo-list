@@ -1,0 +1,34 @@
+@import "variables";
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &:focus-within, &.not-empty {
+    & label {
+      /* following values might need adjustment based on existing styles and desired outcome */
+      top: -$spacing;
+      font-size: $font-s;
+    }
+
+    & input {
+      padding: 8px 5px 5px;
+    }
+  }
+}
+
+.label {
+  position: absolute;
+  top: $spacing;
+  left: $spacing;
+  color: $grey;
+  font-size: $font-m;
+  transition: all .3s ease;
+}
+
+.inputElement {
+  color: $main;
+  border-bottom: 2px solid $grey;
+  padding: $spacing * 0.5 $spacing;
+}
+

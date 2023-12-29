@@ -1,0 +1,20 @@
+<div [ngClass]="{'form-wrapper': true, 'form-control': true, 'not-empty': value }">
+  @if (label) {
+    <label class="label" [for]="inputId">{{ label }}</label>
+  }
+  @if (type === 'input') {
+    <input
+      class="inputElement"
+      type="text"
+      [id]="inputId"
+      [(ngModel)]="value"
+      (input)="onChange(value)">
+  } @else {
+    <textarea
+      class="inputElement"
+      [id]="inputId"
+      [(ngModel)]="value"
+      (input)="onChange(value)"
+      rows="3"></textarea>
+  }
+</div>

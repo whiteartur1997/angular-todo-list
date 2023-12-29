@@ -9,23 +9,16 @@
     },
     {
       "id": 2,
-      "label": "Taxes",
+      "label": "Taxes 22",
       "description": "Start doing my taxes and contact my accountant jhon for advice",
-      "category": "bureaucracy",
+      "category": "family",
       "done": "22-10-2019"
     },
     {
       "id": 1702548435597,
-      "label": "Yolo",
+      "label": "Yolo 3333",
       "description": "Man",
       "category": null,
-      "done": false
-    },
-    {
-      "id": 1702549994236,
-      "label": "frrf",
-      "description": "fwrfw",
-      "category": "work",
       "done": false
     },
     {

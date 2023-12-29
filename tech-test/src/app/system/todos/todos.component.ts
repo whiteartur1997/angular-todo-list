@@ -4,7 +4,7 @@ import {TodoModel} from "./core/interfaces/todo.model";
 import {TodoItemComponent} from "./todo-item/todo-item.component";
 
 @Component({
-  selector: "todos",
+  selector: "app-todos",
   standalone: true,
   imports: [
     TodoItemComponent
@@ -19,7 +19,7 @@ export class TodosComponent implements OnInit {
   private todosService = inject(TodosService);
   ngOnInit() {
     this.isTodosLoading = true;
-    this.todosService.todosChanged.subscribe(
+    this.todosService.$todosChanged.subscribe(
       (todos) => {
         this.todos = todos;
         this.isTodosLoading = false;
